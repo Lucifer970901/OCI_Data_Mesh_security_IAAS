@@ -6,3 +6,13 @@ Parent_compartment_id="ocid1.compartment.oc1..aaaaaaaaukottugsmj5vmneywbzvecjbg5
 ### Region
 region="ap-sydney-1"
 vcn_dns_label="fin"
+
+sub_compartments ={
+  Product_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Product-Domain resources"}
+  Customer_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Customer-Domain resources"}
+  Sales_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for sales-Domain resources"}
+  DataOps_shared = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for DataOps-shared resources"}
+  Database = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Database resources"}
+  Networking = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Networking resources"}
+  Security = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Security resources"}
+}
