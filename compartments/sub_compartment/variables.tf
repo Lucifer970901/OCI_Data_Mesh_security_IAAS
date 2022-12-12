@@ -6,7 +6,3 @@ variable "subcompartments" {
 variable "compartment_id" {
 }
 
-variable "compartment" {
-  description = "sub compartment"
-  type        = string
-}
