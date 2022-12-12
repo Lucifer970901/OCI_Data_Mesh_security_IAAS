@@ -7,6 +7,6 @@ variable "compartment_id" {
 }
 
 variable "compartment" {
-  description = "main compartment"
+  description = "sub compartment"
   type        = string
 }
