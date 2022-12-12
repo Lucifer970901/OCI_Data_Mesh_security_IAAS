@@ -8,11 +8,11 @@ region="ap-sydney-1"
 vcn_dns_label="fin"
 
 sub_compartments ={
-  Product_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Product-Domain resources"}
-  Customer_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Customer-Domain resources"}
-  Sales_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for sales-Domain resources"}
-  DataOps_shared = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for DataOps-shared resources"}
-  Database = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Database resources"}
-  Networking = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Networking resources"}
-  Security = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Security resources"}
+  Product_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Product-Domain resources",compartment_create=true,enable_delete=true}
+  Customer_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Customer-Domain resources",compartment_create=true,enable_delete=true}
+  Sales_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for sales-Domain resources",compartment_create=true,enable_delete=true}
+  DataOps_shared = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for DataOps-shared resources",compartment_create=true,enable_delete=true}
+  Database = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Database resources",compartment_create=true,enable_delete=true}
+  Networking = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Networking resources",compartment_create=true,enable_delete=true}
+  Security = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Security resources",compartment_create=true,enable_delete=true}
 }
