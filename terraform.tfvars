@@ -8,11 +8,11 @@ region="ap-sydney-1"
 vcn_dns_label="fin"
 
 sub_compartments ={
-  Product_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Product-Domain resources",compartment_create=true,enable_delete=true}
-  Customer_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Customer-Domain resources",compartment_create=true,enable_delete=true}
-  Sales_Domain = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for sales-Domain resources",compartment_create=true,enable_delete=true}
-  DataOps_shared = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for DataOps-shared resources",compartment_create=true,enable_delete=true}
-  Database = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Database resources",compartment_create=true,enable_delete=true}
-  Networking = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Networking resources",compartment_create=true,enable_delete=true}
-  Security = {compartment_id=oci_identity_compartment.compartment.id,description="Compartment for Security resources",compartment_create=true,enable_delete=true}
+  Product_Domain = {description="Compartment for Product-Domain resources",compartment_create=true,enable_delete=true}
+  Customer_Domain = {description="Compartment for Customer-Domain resources",compartment_create=true,enable_delete=true}
+  Sales_Domain = {description="Compartment for sales-Domain resources",compartment_create=true,enable_delete=true}
+  DataOps_shared = {description="Compartment for DataOps-shared resources",compartment_create=true,enable_delete=true}
+  Database = {description="Compartment for Database resources",compartment_create=true,enable_delete=true}
+  Networking = {description="Compartment for Networking resources",compartment_create=true,enable_delete=true}
+  Security = {description="Compartment for Security resources",compartment_create=true,enable_delete=true}
 }
