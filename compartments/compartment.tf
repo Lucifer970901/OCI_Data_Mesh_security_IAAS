@@ -1,5 +1,5 @@
 module "base_compartment" {
-  source              = "/compartments/main_compartment"
+  source              = "./main_compartment"
   tenancy_ocid            = var.tenancy_ocid
   compartment_id          = var.Parent_compartment_id
   compartment_name        = "Retail"
@@ -9,7 +9,7 @@ module "base_compartment" {
 }
 
   module "base_sub_compartments" {
-  source              = "/compartments/sub_compartment"
+  source              = "./sub_compartment"
   compartments        = var.sub_compartments
   compartment_id      = module.base_compartment.compartment_id_output
   compartment_create      = true
