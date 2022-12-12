@@ -10,4 +10,15 @@ resource "oci_identity_compartment" "sub_compartments" {
     
 }
 
+resource "oci_identity_compartment" "test_compartment" {
+    #Required
+     
+    
+    compartment_id          = var.Parent_compartment_id 
+    display_name            = var.display_name
+    description             = var.description
+    
+    
+}
+
 
